@@ -1,0 +1,150 @@
+body {
+ padding:3px;
+ margin:3px;
+ background-color:grey
+ 
+}
+
+
+
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 250px;
+Height: 250px;
+}
+h3 {
+ 
+text-align:center;
+ color:white;
+ font-family:"Trebuchet MS", Helvetica, sans-serif;
+ font-size:60px;
+ }
+
+h1{
+ text-align:center;
+ color:white;
+ font-family:"Trebuchet MS", Helvetica, sans-serif;
+ font-size:20px;
+ margin:5px;
+ padding:5px;
+ 
+ 
+}
+
+h2 {
+ 
+ text-align:center;
+ color:white;
+ font-family:"Trebuchet MS", Helvetica, sans-serif;
+ font-size:30px;
+}
+
+p {
+ text-align:left;
+font-family:Arial;
+font-size:15px;
+margin:10px;
+padding:5px;
+color:white;
+}
+
+
+
+
+ 
+
+/* Style the navigation bar */
+.navbar {
+width: 30%;
+background-color: #555;
+overflow: auto;
+ border: 2px solid black;
+ border-radius: 5px;
+}
+
+/* Navbar links */
+.navbar a {
+float: left;
+text-align: center;
+padding: 12px;
+color: black;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+background-color: white;
+
+}
+
+/* Current/active navbar link */
+.active {
+background-color: white;
+
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+.navbar a {
+  float: none;
+  display: block;
+}
+}
+
+.item2 {
+ 
+ grid-area: menu;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+   border: 2px solid black;
+ border-radius: 5px;
+ 
+ 
+}
+
+
+.item3
+{ grid-area: main;
+font-family:"Trebuchet MS", Helvetica, sans-serif;
+border: 2px solid black;
+ border-radius: 5px;
+ color:White;
+}
+.item4 {
+ 
+grid-area: right;
+font-family:"Trebuchet MS", Helvetica, sans-serif;
+border: 2px solid black;
+ border-radius: 5px;
+ color:white;
+}
+.item5 {
+grid-area: footer;
+font-family:"Trebuchet MS", Helvetica, sans-serif;
+border: 2px solid black;
+ border-radius: 5px;
+ color:white;
+}
+
+.grid-container {
+display: grid;
+grid-template-areas:
+ 
+  'menu main main main right right'
+  'menu footer footer footer footer footer';
+grid-gap: 10px;
+background-color: white;
+padding: 10px;
+}
+
+.grid-container > div {
+background-color: black;
+text-align: center;
+padding: 20px 0;
+font-size: 30px;
+border: 2px solid black;
+ border-radius: 5px;
+}
